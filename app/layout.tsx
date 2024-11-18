@@ -3,7 +3,6 @@ import React from "react";
 import type { Metadata } from "next";
 import "./globals.css";
 
-import React from "react";
 import { Footer } from "../components";
 import { Navbar } from "../components";
 
