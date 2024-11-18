@@ -2,7 +2,11 @@ import React from "react";
 
 import type { Metadata } from "next";
 import "./globals.css";
+
+import React from "react";
+import { Footer } from "../components";
 import { Navbar } from "../components";
+
 
 export const metadata: Metadata = {
   title: "RCL Rentals",
@@ -19,6 +23,7 @@ export default function RootLayout({
       <body className="antialiased relative">
         <Navbar />
         <main className="flex-grow">{children}</main>
+        <Footer />
       </body>
     </html>
   );
