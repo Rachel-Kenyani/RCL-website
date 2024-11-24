@@ -13,6 +13,14 @@ export default {
         primary: {
           DEFAULT: "#019BA2",
         },
+        grey: {
+          DEFAULT: "#717171",
+        },
+        backgroundImage: {
+          "primary-gradient": "linear-gradient(to right, #019BA2, #034245)",
+          "secondary-gradient": "linear-gradient(to bottom, #002558, #E6943A)",
+          "teal-gradient": "linear-gradient(to bottom right, #FFFFFF, #F8FFFF)",
+        },
         secondary: {
           DEFAULT: "#E6943A",
         },
