@@ -1,3 +1,4 @@
+"use client"
 import { CustomTooltip } from "./CustomTooltip";
 import React, { useState } from "react";
 

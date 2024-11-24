@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from "react";
 import Slider from "@mui/material/Slider";
 import Typography from "@mui/material/Typography";
@@ -31,7 +32,13 @@ const PriceRangeSlider = () => {
           step={10}
           valueLabelFormat={(value) => `KSh.${value}`}
           valueLabelDisplay="auto"
-          sx={{ width: "100%" }}
+          sx={{
+            width: "100%",
+            color: "#019BA2",
+            "&.Mui-checked": {
+              color: "#019BA2",
+            },
+          }}
         />
         <Typography className="flex items-center justify-between" gutterBottom>
           <span className="py-2 w-24 px-2 poppins-medium text-gray-400 text-sm border-[1px] border-gray-200 rounded-md">

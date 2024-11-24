@@ -15,26 +15,64 @@ const RadioField = () => {
 
   return (
     <FormControl>
-      <FormLabel className="text-gray-400 poppins-semibold text-base">Sort By</FormLabel>
+      <FormLabel className="text-gray-400 poppins-semibold text-base">
+        Sort By
+      </FormLabel>
       <RadioGroup value={value} onChange={handleChange}>
         <FormControlLabel
           value="Most popular"
-          control={<Radio />}
+          control={
+            <Radio
+              sx={{
+                color: "#019BA2",
+                "&.Mui-checked": {
+                  color: "#019BA2",
+                },
+              }}
+            />
+          }
           label="Most popular"
         />
         <FormControlLabel
           value="Price (High to Low)"
-          control={<Radio />}
+          control={
+            <Radio
+              sx={{
+                color: "#019BA2",
+                "&.Mui-checked": {
+                  color: "#019BA2",
+                },
+              }}
+            />
+          }
           label="Price (High to Low)"
         />
         <FormControlLabel
           value="Price (Low to High)"
-          control={<Radio />}
+          control={
+            <Radio
+              sx={{
+                color: "#019BA2",
+                "&.Mui-checked": {
+                  color: "#019BA2",
+                },
+              }}
+            />
+          }
           label="Price (Low to High)"
         />
         <FormControlLabel
           value="New Arrivals"
-          control={<Radio />}
+          control={
+            <Radio
+              sx={{
+                color: "#019BA2",
+                "&.Mui-checked": {
+                  color: "#019BA2",
+                },
+              }}
+            />
+          }
           label="New Arrivals"
         />
       </RadioGroup>

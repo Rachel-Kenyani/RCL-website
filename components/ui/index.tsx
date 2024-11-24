@@ -6,6 +6,7 @@ import { HoverEffect } from "./HoverEffect";
 import DurationButtons from "./DurationButtons";
 import DeviceCondition from "./DeviceCondition";
 import PriceRangeSlider from "./PriceRangeSlider";
+import AccordionUsage from "./AccordionUsage";
 
 export {
   SearchBar,
@@ -16,4 +17,5 @@ export {
   CheckBoxesField,
   DeviceCondition,
   PriceRangeSlider,
+  AccordionUsage,
 };

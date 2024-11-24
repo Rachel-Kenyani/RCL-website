@@ -29,7 +29,12 @@ const CheckBoxesField = ({
     <div>
       {items.map((item, idx) => (
         <FormControl key={idx} component="fieldset">
-          <FormLabel className="text-gray-400 poppins-semibold text-base">
+          <FormLabel
+            style={{
+              color: "text-gray-400",
+            }}
+            className="text-gray-400 poppins-semibold text-base"
+          >
             {item?.title}
           </FormLabel>
           <FormGroup>
@@ -41,6 +46,9 @@ const CheckBoxesField = ({
                     name={`${item.title}-${option}`}
                     checked={!!checkedItems[`${item.title}-${option}`]}
                     onChange={handleChange}
+                    style={{
+                      color: "#019BA2",
+                    }}
                   />
                 }
                 label={option}
