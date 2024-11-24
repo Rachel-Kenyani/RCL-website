@@ -29,10 +29,4 @@ export const clientsImages = [
       clientImage: "/Logo-5.png",
     },
   },
-  {
-    attributes: {
-      clientName: "Logo-6",
-      clientImage: "/Logo-6.png",
-    },
-  },
 ];

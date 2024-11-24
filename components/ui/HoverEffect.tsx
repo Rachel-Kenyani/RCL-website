@@ -5,7 +5,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { div } from "framer-motion/client";
 
 export const HoverEffect = ({
   items,
@@ -13,6 +12,7 @@ export const HoverEffect = ({
 }: {
   items: {
     title: string;
+    id: string;
     description: string;
     link: string;
   }[];
@@ -28,8 +28,9 @@ export const HoverEffect = ({
       )}
     >
       {items.map((item, idx) => (
-        <div
-          key={item?.link}
+        <Link
+          href={`/laptops-for-hire/${item.id}`}
+          key={item.id}
           className="relative group  block p-4 h-full w-full rounded-md"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -62,7 +63,7 @@ export const HoverEffect = ({
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
-        </div>
+        </Link>
       ))}
     </div>
   );
