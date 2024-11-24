@@ -53,7 +53,7 @@ const Menu = () => {
             </Link>
             <Link href="/contact-us" className="flex justify-center my-2">
               <button
-                className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md bg-[linear-gradient(110deg,#019BA2,45%,#4EBABF,55%,#019BA2)] bg-[length:200%_100%] px-6 font-medium text-white poppins-medium transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+                className="shadow-xl inline-flex h-12 animate-shimmer items-center justify-center rounded-md bg-[linear-gradient(110deg,#019BA2,45%,#4EBABF,55%,#019BA2)] bg-[length:200%_100%] px-6 font-medium text-white poppins-medium transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
                 type="button"
               >
                 Contact Us
