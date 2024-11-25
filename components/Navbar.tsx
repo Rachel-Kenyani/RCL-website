@@ -1,56 +1,69 @@
+"use client";
+
 import React from "react";
 
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
-import Menu from "./Menu";
-import SearchBar from "./SearchBar";
+import { Menu } from ".";
+import { SearchBar } from ".";
 
 const Navbar = () => {
+  const pathname = usePathname();
+
   return (
-    <div className="relative h-20 px-1 md:px-4 lg:px-16 xl:px-32 2xl:px-64">
+    <div className="bg-white rounded-full shadow-lg mx-4 sticky h-20 px-2 md:px-2 lg:px-6 xl:px-14 2xl:px-30 top-0 left-0 z-40">
       {/* Mobile */}
       <div className="flex justify-between items-center md:hidden py-2">
-        <Link href="/">
-          <Image src="/Logo.png" alt="logo" width={150} height={0} />
+        <Link href="/" className={`link ${pathname === "/" ? "active" : ""}`}>
+          <Image src="/Logo.png" alt="logo" width={150} height={0} priority />
         </Link>
         <Menu />
       </div>
 
       {/* Bigger Screens */}
       <div className="hidden md:flex items-center justify-between gap-2 h-full">
-        <Link href="/">
-          <Image src="/Logo.png" alt="logo" width={150} height={0} />
+        <Link
+          href="/"
+          className={`link ${pathname === "/about-us" ? "active" : ""}`}
+        >
+          <Image src="/Logo.png" alt="logo" width={150} height={0} priority />
         </Link>
 
-        <div className="flex gap-6">
+        <div className="flex gap-8">
           <Link
             href="/"
-            className="flex poppins-medium hover:text-primary items-center text-tertiary my-2"
+            className={`link ${
+              pathname === "/" ? "active text-primary" : "text-tertiary"
+            }flex poppins-medium hover:text-primary items-center my-2`}
           >
             Home
           </Link>
           <Link
             href="/about-us"
-            className="flex poppins-medium hover:text-primary items-center text-tertiary my-2"
+            className={`link ${
+              pathname === "/about-us" ? "active text-primary" : "text-tertiary"
+            } flex poppins-medium hover:text-primary items-center my-2`}
           >
             About Us
           </Link>
           <Link
             href="/laptops-for-hire"
-            className="flex poppins-medium hover:text-primary items-center text-tertiary my-2"
+            className={`link ${
+              pathname === "/laptops-for-hire"
+                ? "active text-primary"
+                : "text-tertiary"
+            } flex poppins-medium hover:text-primary items-center my-2`}
           >
             Laptops for Hire
           </Link>
-          <Link
-            href="/blogs"
-            className="flex poppins-medium hover:text-primary items-center text-tertiary my-2"
-          >
-            Blogs
-          </Link>
+
           <Link
             href="/faqs"
-            className="flex poppins-medium hover:text-primary items-center  text-tertiary my-2"
+            className={`link ${
+              pathname === "/faqs" ? "active text-primary" : "text-tertiary"
+            } flex poppins-medium hover:text-primary items-center  my-2`}
           >
             FAQs
           </Link>
@@ -60,8 +73,13 @@ const Navbar = () => {
 
         <Link href="/contact-us" className="flex justify-center my-2">
           <button
-            className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md bg-[linear-gradient(110deg,#019BA2,45%,#4EBABF,55%,#019BA2)] bg-[length:200%_100%] px-6 font-medium text-white poppins-medium transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
             type="button"
+            className={`link ${
+              pathname === "/contact-us"
+                ? "active bg-none text-tertiary border-[1px] border-tertiary"
+                : "bg-[linear-gradient(110deg,#019BA2,45%,#2DC6CD,55%,#019BA2)] bg-[length:200%_100%] text-white"
+            } shadow-xl h-10 animate-shimmer items-center justify-center rounded-md px-6 font-medium poppins-medium transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+            type="button`}
           >
             Contact Us
           </button>
