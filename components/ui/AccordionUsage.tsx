@@ -33,6 +33,7 @@ export default function AccordionUsage() {
         >
           How long can I rent a laptop?
         </AccordionSummary>
+        <hr />
         <AccordionDetails
           sx={{
             color: "#717171",
@@ -63,6 +64,7 @@ export default function AccordionUsage() {
         >
           What is included in the rental price?
         </AccordionSummary>
+        <hr />
         <AccordionDetails
           sx={{
             color: "#717171",
@@ -92,6 +94,7 @@ export default function AccordionUsage() {
         >
           What is your cancellation and damage policy?
         </AccordionSummary>
+        <hr />
         <AccordionDetails
           sx={{
             color: "#717171",
@@ -121,6 +124,7 @@ export default function AccordionUsage() {
         >
           Do you offer deliveries?
         </AccordionSummary>
+        <hr />
         <AccordionDetails
           sx={{
             color: "#717171",
@@ -150,6 +154,7 @@ export default function AccordionUsage() {
         >
           Can I upgrade the laptop's configuration?
         </AccordionSummary>
+        <hr />
         <AccordionDetails
           sx={{
             color: "#717171",
@@ -179,6 +184,7 @@ export default function AccordionUsage() {
         >
           Can I extend my rental?
         </AccordionSummary>
+        <hr />
         <AccordionDetails
           sx={{
             color: "#717171",

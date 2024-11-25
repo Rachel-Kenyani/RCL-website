@@ -76,9 +76,9 @@ const Navbar = () => {
             type="button"
             className={`link ${
               pathname === "/contact-us"
-                ? "active bg-none text-tertiary border-2 border-tertiary"
-                : "bg-[linear-gradient(110deg,#019BA2,45%,#2DC6CD,55%,#019BA2)] bg-[length:200%_100%]"
-            } shadow-xl h-10 animate-shimmer items-center justify-center rounded-md px-6 font-medium text-white poppins-medium transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+                ? "active bg-none text-tertiary border-[1px] border-tertiary"
+                : "bg-[linear-gradient(110deg,#019BA2,45%,#2DC6CD,55%,#019BA2)] bg-[length:200%_100%] text-white"
+            } shadow-xl h-10 animate-shimmer items-center justify-center rounded-md px-6 font-medium poppins-medium transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
             type="button`}
           >
             Contact Us

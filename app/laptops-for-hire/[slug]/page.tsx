@@ -6,12 +6,11 @@ import { usePathname } from "next/navigation";
 
 interface PageProps {
   params: {
-    slug: string; // Matches the `[slug]` dynamic route folder name
+    slug: string;
   };
 }
 const Page: React.FC<PageProps> = ({ params }) => {
   const pathname = usePathname();
-  const { slug } = React.use(params); // Access the dynamic slug
 
   return (
     <div className="bg-[#F5F5F5] py-6">
